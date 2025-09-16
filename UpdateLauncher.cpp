@@ -12,14 +12,14 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 
 	try
 	{
-		const wchar_t ProgMutex[] =_T("KBS_UpdateLauncher");
+		const wchar_t ProgMutex[] =_T("UpdateLauncher");
 		if((Mutex = OpenMutex(MUTEX_ALL_ACCESS, false, ProgMutex)) == NULL)
 		{
 			Mutex = CreateMutex(NULL, true, ProgMutex);
 		}
 		else
 		{
-			MessageDlg(_T("KBS_UpdateLauncher 프로그램이 이미 작동하고 있습니다."), mtError, TMsgDlgButtons() << mbOK, 0);
+			MessageDlg(_T("UpdateLauncher 프로그램이 이미 작동하고 있습니다."), mtError, TMsgDlgButtons() << mbOK, 0);
 			return 0;
 		}
 

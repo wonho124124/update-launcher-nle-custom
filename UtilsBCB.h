@@ -26,6 +26,8 @@
 
 // ---------------------------------------------------------------------------
 
+#define LOG_BASE_PATH L"C:\\Users\\Public\\Documents\\Gemiso\\NLE Client Manager"
+
 class TUtils
 {
 private:

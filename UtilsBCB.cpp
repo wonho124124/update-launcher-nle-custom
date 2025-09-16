@@ -62,9 +62,11 @@ void __fastcall TUtils::LogMessage(
 	String strLogMessage = L"";
 	String strLogFilePath =
 		ChangeFileExt( ExtractFileName( Application->ExeName ), L".log" );
-	strLogPath.sprintf( L"%sLog\\%s\\%s",
-		ExtractFilePath( Application->ExeName ).c_str( ),
-		Now( ).FormatString( L"yyyymmdd" ).c_str( ), strLogFilePath.c_str( ) );
+
+	strLogPath.sprintf( L"%s\\Logs\\%s\\%s",
+		LOG_BASE_PATH,
+		Now( ).FormatString( L"yyyymmdd" ).c_str( ),
+		strLogFilePath.c_str( ) );
 
 	ForceDirectories( ExtractFilePath( strLogPath ) );
 

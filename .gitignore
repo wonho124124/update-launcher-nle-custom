@@ -3,3 +3,4 @@
 *.stat
 *.res
 Win32/
+__history/
