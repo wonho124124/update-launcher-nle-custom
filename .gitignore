@@ -1,0 +1,5 @@
+*.dcu
+*.local
+*.stat
+*.res
+Win32/
