@@ -592,7 +592,7 @@ void __fastcall TForm1::btnUpdateClick(TObject *Sender)
 	else
 	{
 		// 기본 실행.
-		ShellExecute(NULL, L"open", strUpdateFilePath.c_str(), L"", NULL, SW_SHOWNORMAL);
+		ShellExecute(NULL, L"open", L"C:\\Users\\Public\\Documents\\Gemiso\\Update\\Setup.bat", L"", NULL, SW_SHOWNORMAL);
 	}
 	Close();
 }
